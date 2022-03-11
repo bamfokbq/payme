@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+*, *::before, *::after {
+box-sizing: border-box;
+}
+* {
+ margin: 0;
+}
+html, body {
+height: 100%;
+font-family: 'Roboto', sans-serif;
+}
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+input, button, textarea, select {
+font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+#root, #__next {
+isolation: isolate;
+}
+
+:root {
+--color-primary: #25A4AD;
+--color-secondary: #D7FCFF;
+--color-primary-dark: #2C2C2C;
+--color-secondary-dark: #313131;
+--color-primary-light: #F8F8F8;
+--side-padding: 6vw;
+}
+
+    /*HEADER STYLING
+-------------------------------START----------------------------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh var(--side-padding);
+    }
+
+    nav ul{
+        display: flex;
+        gap:4vw;
+    }
+
+    nav ul li{
+        list-style: none;
+        cursor: pointer;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: var(--color-primary-dark);
+    }
+
+    nav ul li #logo{
+        font-weight: 900;
+         color: var(--color-primary);
+    }
+/*------------------------------END-----------------------------*/
